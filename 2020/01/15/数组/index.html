@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>数组 | loading.....</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="数组：数组是存储1个或多个数据的容器，是一组内存空间， 通常用来批量处理数据 这组内存空间的名字叫做数组名 数组对自身储存的数组元素没有限制，不论数量类型 通过数组下标（从0开始）来管理和操作数组 数组名.length    表示数组的长度，也是储存元素的个数；因为下标从0开始，所以数组长度     减1表示最后一个元素下标创建数组：    创建一个数组        传统写法 1234">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组">
+<meta property="og:url" content="https://www.macloud.top/2020/01/15/%E6%95%B0%E7%BB%84/index.html">
+<meta property="og:site_name" content="loading.....">
+<meta property="og:description" content="数组：数组是存储1个或多个数据的容器，是一组内存空间， 通常用来批量处理数据 这组内存空间的名字叫做数组名 数组对自身储存的数组元素没有限制，不论数量类型 通过数组下标（从0开始）来管理和操作数组 数组名.length    表示数组的长度，也是储存元素的个数；因为下标从0开始，所以数组长度     减1表示最后一个元素下标创建数组：    创建一个数组        传统写法 1234">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-15T07:18:30.061Z">
+<meta property="article:modified_time" content="2020-01-15T07:22:34.427Z">
+<meta property="article:author" content="matian">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="loading....." type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">loading.....</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.macloud.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-数组" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/15/%E6%95%B0%E7%BB%84/" class="article-date">
+  <time datetime="2020-01-15T07:18:30.061Z" itemprop="datePublished">2020-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      数组
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="数组："><a href="#数组：" class="headerlink" title="数组："></a>数组：</h3><pre><code>数组是存储1个或多个数据的容器，是一组内存空间，
+通常用来批量处理数据
+这组内存空间的名字叫做数组名
+数组对自身储存的数组元素没有限制，不论数量类型
+通过数组下标（从0开始）来管理和操作数组
+数组名.length    表示数组的长度，也是储存元素的个数；因为下标从0开始，所以数组长度
+    减1表示最后一个元素下标</code></pre><p>创建数组：<br>    创建一个数组<br>        传统写法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">    <span class="keyword">var</span> str = <span class="keyword">new</span> <span class="built_in">String</span>();</span><br><span class="line"><span class="comment">//字面量(语法糖)</span></span><br><span class="line">    <span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">"haha"</span>];</span><br></pre></td></tr></table></figure>
+<h4 id="访问数组"><a href="#访问数组" class="headerlink" title="访问数组:"></a>访问数组:</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">访问单个元素</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(arr[<span class="number">0</span>]);</span><br><span class="line">访问全部元素</span><br><span class="line">    数组和循环的结合使用</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(arr[i]);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h5 id="数组越界-访问了不属于该数组的内存空间"><a href="#数组越界-访问了不属于该数组的内存空间" class="headerlink" title="数组越界:  访问了不属于该数组的内存空间"></a>数组越界:  访问了不属于该数组的内存空间</h5><h3 id="数组方法："><a href="#数组方法：" class="headerlink" title="数组方法："></a>数组方法：</h3><pre><code>  1.push( )：将一个元素添加到数组的最后一位
+      数组名.push( 添加的元素 )
+  2.unshift( )：将一个元素添加到数组的第一位
+      数组名.unshift( 添加的元素 ）
+  3.pop( )：删除数组的最后一个元素
+      数组名.pop(  )
+  4.shift( )：删除数组的第一个元素
+      数组名.shift(  )
+  5.slice(开始,结束)：截取数组的指定范围，并返回
+      截取的是开始到结束的前一位（复制新内容）
+  6.splice(开始位置，修改长度）：修改原数据，不复制
+      删除：只规定开始位置与修改长度
+      替换：规定了开始位置，修改长度和新内容
+      插入：新内容的个数多于修改的长度
+  7.join( )：将数组中的元素转换为字符串，拼接并返回
+  8.sort( )：数组排序    从小到大
+  9.reverse( )：倒序排列
+10.cancat：将后者拼接到前者的后面，结合成新的数组
+11.instancdof：运算，判断它是不是一个数组，返回true/false
+     console.log(arr instanceof Array);
+书写方式2：
+Array.isArray(检测对象)
+console.log(Array.isArray(arr));</code></pre><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> s=i+<span class="number">1</span>;s &lt; arr.length<span class="number">-1</span>;s++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] == arr[s])&#123;</span><br><span class="line">        a.splice(s,<span class="number">1</span>);</span><br><span class="line">        --s;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> s=<span class="number">0</span>;s &lt;arr.length<span class="number">-1</span>;s++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] &lt; arr[s])&#123;</span><br><span class="line">            <span class="keyword">var</span> a=arr[i];</span><br><span class="line">            arr[i] = arr[s];</span><br><span class="line">            arr[s] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/15/%E6%95%B0%E7%BB%84/" data-id="ck5ezaceo00012gw53tbv6iqe" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">随机色</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/15/%E6%95%B0%E7%BB%84/">数组</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/">随机色</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/15/Math%E5%AF%B9%E8%B1%A1/">Math对象</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/15/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F/">变量的作用域</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/15/%E5%87%BD%E6%95%B0/">函数</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 matian<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
