@@ -64,6 +64,48 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-定时器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/" class="article-date">
+  <time datetime="2020-01-19T02:15:16.292Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/">定时器</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="setInterval-参数1，参数2-会去重复执行某一个功能"><a href="#setInterval-参数1，参数2-会去重复执行某一个功能" class="headerlink" title="setInterval(参数1，参数2): 会去重复执行某一个功能"></a>setInterval(参数1，参数2): 会去重复执行某一个功能</h3><p>参数1：  每次执行的具体任务, 自定义<br>参数2：  每次执行的间隔时间, 自定义    单位为毫秒</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer=setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,<span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="一次性定时器："><a href="#一次性定时器：" class="headerlink" title="一次性定时器："></a>一次性定时器：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(参数<span class="number">1</span>，参数<span class="number">2</span>):只执行一次的定时器</span><br></pre></td></tr></table></figure>
+<p>参数1：执行的具体任务<br>参数2：间隔多久执行（延迟）</p>
+<h3 id="清除定时器："><a href="#清除定时器：" class="headerlink" title="清除定时器："></a>清除定时器：</h3><p>1.需要记录器（变量自增），达到条件时触发<br>2.定义定时其实，需定义变量来保存定时器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">clearInterval(变量名称）</span><br><span class="line">clearTimeout(变量名称）</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/" data-id="ck5ke2ats0000nsw5c7sz0rtj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Date" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/15/Date/" class="article-date">
@@ -533,47 +575,6 @@ prompt() 输入框，返回的数据，默认是字符串类型。即使不是�
 
 
   
-    <article id="post-变量" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/01/15/%E5%8F%98%E9%87%8F/" class="article-date">
-  <time datetime="2020-01-15T02:54:40.840Z" itemprop="datePublished">2020-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/15/%E5%8F%98%E9%87%8F/">变量</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h3 id="声明并使用常量和变量"><a href="#声明并使用常量和变量" class="headerlink" title="声明并使用常量和变量"></a>声明并使用常量和变量</h3><h5 id="1-常量：不能改变的数值"><a href="#1-常量：不能改变的数值" class="headerlink" title="1.常量：不能改变的数值"></a>1.常量：不能改变的数值</h5><h5 id="2-变量：可以改变的数值"><a href="#2-变量：可以改变的数值" class="headerlink" title="2.变量：可以改变的数值"></a>2.变量：可以改变的数值</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xx(自定义) =(单等号赋值号)</span><br></pre></td></tr></table></figure>
-<h3 id="创建变量分两步"><a href="#创建变量分两步" class="headerlink" title="创建变量分两步"></a>创建变量分两步</h3><h4 id="1-声明变量-向系统申请一块内存叫a"><a href="#1-声明变量-向系统申请一块内存叫a" class="headerlink" title="(1) 声明变量 :向系统申请一块内存叫a"></a>(1) 声明变量 :向系统申请一块内存叫a</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br></pre></td></tr></table></figure>
-<h4 id="2-定义变量-：向已经存在的变量赋值数值1"><a href="#2-定义变量-：向已经存在的变量赋值数值1" class="headerlink" title="(2) 定义变量 ：向已经存在的变量赋值数值1"></a>(2) 定义变量 ：向已经存在的变量赋值数值1</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="3-声明且定义变量"><a href="#3-声明且定义变量" class="headerlink" title="(3) 声明且定义变量"></a>(3) 声明且定义变量</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="多次赋值："><a href="#多次赋值：" class="headerlink" title="多次赋值："></a>多次赋值：</h3><h5 id="1-赋值一定是声明过哦的变量"><a href="#1-赋值一定是声明过哦的变量" class="headerlink" title="1. 赋值一定是声明过哦的变量"></a>1. 赋值一定是声明过哦的变量</h5><h5 id="2-每个变量智能声明1次"><a href="#2-每个变量智能声明1次" class="headerlink" title="2. 每个变量智能声明1次"></a>2. 每个变量智能声明1次</h5>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.macloud.top/2020/01/15/%E5%8F%98%E9%87%8F/" data-id="ck5eq1g230000ugw5gibtgey9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -610,6 +611,10 @@ prompt() 输入框，返回的数据，默认是字符串类型。即使不是�
       <ul>
         
           <li>
+            <a href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/">定时器</a>
+          </li>
+        
+          <li>
             <a href="/2020/01/15/Date/">Date</a>
           </li>
         
@@ -623,10 +628,6 @@ prompt() 输入框，返回的数据，默认是字符串类型。即使不是�
         
           <li>
             <a href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/">随机色</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/15/Math%E5%AF%B9%E8%B1%A1/">Math对象</a>
           </li>
         
       </ul>
