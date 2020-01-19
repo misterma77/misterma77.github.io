@@ -59,6 +59,357 @@
       <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
+    <article id="post-jq的优点和补充" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/jq%E7%9A%84%E4%BC%98%E7%82%B9%E5%92%8C%E8%A1%A5%E5%85%85/">jq的优点和补充</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jq%E7%9A%84%E4%BC%98%E7%82%B9%E5%92%8C%E8%A1%A5%E5%85%85/" class="article-date">
+  <time datetime="2020-01-19T06:33:44.555Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<h3 id="使用jQuery的好处-为什么使用jQuery"><a href="#使用jQuery的好处-为什么使用jQuery" class="headerlink" title="使用jQuery的好处/为什么使用jQuery"></a>使用jQuery的好处/为什么使用jQuery</h3><pre><code>1.因为它是轻量级别的框架，大小不超过30kb
+2.它有强大的选择器，出色的Dom操作封装
+3.有可靠的事件处理机制
+4.完善的ajax
+5.出色的浏览器兼容性
+6.支持链式操作，隐式迭代
+7.行为层（功能）和结构层（页面元素）分离，还支持丰富的插件</code></pre><h3 id="jQuery库中的-是什么？"><a href="#jQuery库中的-是什么？" class="headerlink" title="jQuery库中的$( )是什么？"></a>jQuery库中的$( )是什么？</h3><pre><code>    $( )时jQuery( )的别称；$函数用于将任何对象包裹成jQuery对象，接着你就可以调用定义在jQuery对
+象上的不同方法
+    将一个选择器字符串传入$( )函数，它会返回一个包含所有匹配的Dom元素数组的jQuery对象</code></pre><h3 id="document-ready-是个什么函数？为什么要用它？"><a href="#document-ready-是个什么函数？为什么要用它？" class="headerlink" title="$(document).ready( )是个什么函数？为什么要用它？"></a>$(document).ready( )是个什么函数？为什么要用它？</h3><pre><code>    $(document).ready( )函数用于在文档进入ready状态时执行代码，当HTML被完全解析DOM树构建完
+成时，jQuery允许你执行代码
+    $(document).ready( )适用于所有浏览器，解决了跨浏览器的难题</code></pre>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-jq封装函数功能" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/jq%E5%B0%81%E8%A3%85%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/">jq封装函数功能</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jq%E5%B0%81%E8%A3%85%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/" class="article-date">
+  <time datetime="2020-01-19T06:30:14.327Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<h3 id="对象级别给jq添加方法"><a href="#对象级别给jq添加方法" class="headerlink" title="对象级别给jq添加方法"></a>对象级别给jq添加方法</h3><pre><code>方式一：
+    $.fn.extend({
+        函数名:function( ){ 
+        },
+        函数名:function( ){
+        }
+    })
+方式二：
+    $.fn.函数名 = function( ){ }
+     类级别的添加</code></pre><h3 id="直接通过-来调用，不再受到调用者的约束"><a href="#直接通过-来调用，不再受到调用者的约束" class="headerlink" title="直接通过$来调用，不再受到调用者的约束"></a>直接通过$来调用，不再受到调用者的约束</h3><pre><code>方式一：
+    $.extend({
+        函数名:function( ){
+        },
+        函数名:function( ){
+        }
+    )}
+方式二：
+    $.函数名=function( ){ }</code></pre>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-对象的创建和使用" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/">对象的创建和使用</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time datetime="2020-01-19T06:28:54.937Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123; &#125;        创建一个空对象</span><br><span class="line">obj.name = <span class="string">"xx"</span>;</span><br><span class="line">如果该对象有name这个属性，name找到这个属性并赋值；如果没有name这个属性，那么创建这个属性，再赋值</span><br><span class="line">obj[age] = <span class="string">"19"</span>        通过中括号访问</span><br><span class="line"><span class="keyword">var</span> obj1= &#123; <span class="string">"name"</span> : <span class="string">"xxx"</span> , <span class="string">"name"</span> : <span class="string">"xx"</span>&#125;;        在创建时赋值</span><br></pre></td></tr></table></figure></div>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-事件委托" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/">事件委托</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/" class="article-date">
+  <time datetime="2020-01-19T06:26:55.182Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<h3 id="为什么要用事件委托？"><a href="#为什么要用事件委托？" class="headerlink" title="为什么要用事件委托？"></a>为什么要用事件委托？</h3><pre><code>1.在js中添加到页面的事件处理程序的个数直接关系到页面的整体加载速度。因为每个事件处理程序都是一个对象，对象会占用内存，对象越多需要加载的内存就越多
+2.有很多数据的表格以及很长的列表添加事件,事件委托能极大的提高页面的加载速度，减少工作人员的工作量</code></pre><h3 id="事件委托的使用场景-作用："><a href="#事件委托的使用场景-作用：" class="headerlink" title="事件委托的使用场景/作用："></a>事件委托的使用场景/作用：</h3><pre><code>1.操作子元素时，不用一 一遍历，可以根据事件触发的对象来进行相应的操作
+2.将事件委托给父级后，动态创建（删除）的子元素不用重新绑定（解绑）事件。实现了事件和元素的同步更新</code></pre><h3 id="事件委托的适用性："><a href="#事件委托的适用性：" class="headerlink" title="事件委托的适用性："></a>事件委托的适用性：</h3><pre><code>1.focus( ),blur( )方法本身没有事件冒泡，无法使用事件委托
+2.mouseover,mouseout这两个事件的触发率较高，经常需要大量计算，所以偶尔会出现卡顿，偏差
+3.比较适用： click , mousedown , mouseup , keydown , keyup ,keypress</code></pre>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-jQ动画" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/jQ%E5%8A%A8%E7%94%BB/">jQ动画</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jQ%E5%8A%A8%E7%94%BB/" class="article-date">
+  <time datetime="2020-01-19T06:14:56.710Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 目标.hide()  让目标隐藏（修改的display属性）</span><br><span class="line">        小括号中，可是设置动画执行的时间</span><br><span class="line"><span class="number">2.</span> 目标.show()  让目标显示</span><br><span class="line">        小括号中，可以设置动画执行的时间</span><br><span class="line"><span class="number">3.</span> 目标.toggle()</span><br><span class="line">        会先判断目标的属性，如果是显示，就设置为隐藏</span><br><span class="line">        如果是隐藏，就设置为显示</span><br><span class="line"><span class="number">4.</span> 目标.fadeIn()    淡入</span><br><span class="line">        小括号中，可是设置动画执行的时间</span><br><span class="line"><span class="number">5.</span> 目标.fadeOut()    谈出</span><br><span class="line">        小括号中，可是设置动画执行的时间</span><br><span class="line"><span class="number">6.</span> 目标.fadeToggle()    淡入/淡出</span><br><span class="line"><span class="number">7.</span> 目标.fadeTo()    渐变到指定的透明度</span><br><span class="line"><span class="number">8.</span> 目标.slideDown()    滑入</span><br><span class="line">       $(<span class="string">".btn:eq(5)"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="string">".box"</span>).slideDown(<span class="number">2000</span>);</span><br><span class="line">       &#125;);</span><br><span class="line"><span class="number">9.</span> 目标.slideUp()    滑出</span><br><span class="line">       $(<span class="string">".btn:eq(6)"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="string">".box"</span>).slideUp(<span class="number">2000</span>);</span><br><span class="line">       &#125;);</span><br><span class="line">       $(<span class="string">".btn:eq(7)"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="string">".box"</span>).slideToggle(<span class="number">2000</span>);</span><br><span class="line">       &#125;);</span><br><span class="line"><span class="number">10.</span> 目标.slideToggle()    滑入/滑出</span><br><span class="line">animate</span><br><span class="line">$(<span class="string">".text:first"</span>).animate(&#123;</span><br><span class="line">                   <span class="string">'opacity'</span>: <span class="number">1</span>,</span><br><span class="line">                   fontSize: <span class="string">"40px"</span></span><br><span class="line">               &#125;, <span class="number">5000</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                   $(<span class="keyword">this</span>).animate(&#123;</span><br><span class="line">                       fontSize: <span class="string">"16px"</span></span><br><span class="line">                   &#125;, <span class="number">3000</span>)</span><br></pre></td></tr></table></figure></div>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-jQ操作DOM" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/jQ%E6%93%8D%E4%BD%9CDOM/">jQ操作DOM</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jQ%E6%93%8D%E4%BD%9CDOM/" class="article-date">
+  <time datetime="2020-01-19T06:07:07.687Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<h3 id="js创建节点"><a href="#js创建节点" class="headerlink" title="js创建节点"></a>js创建节点</h3><p><code>var li1 = document.createElement(&quot;li&quot;);</code></p>
+<h3 id="jq创建节点"><a href="#jq创建节点" class="headerlink" title="jq创建节点"></a>jq创建节点</h3><p><code>var $li = $(&quot;&lt;li&gt;榴莲&lt;/li&gt;&quot;);</code></p>
+<h3 id="jq-添加节点"><a href="#jq-添加节点" class="headerlink" title="jq 添加节点"></a>jq 添加节点</h3><ol>
+<li><p>内容.appendTo(目标)    将内容添加到目标 中 的最后一位</p>
+<pre><code>$li.appendTo($(&quot;ul&quot;));
+$(&quot;&lt;li&gt;芒果&lt;/li&gt;&quot;).appendTo(&quot;ul&quot;);
+$(&quot;&lt;li&gt;柠檬&lt;/li&gt;&quot;).appendTo(&quot;ul&quot;);</code></pre></li>
+<li><p>目标.prepend(“内容”)    将内容添加到目标 的第一位</p>
+<pre><code>$(&quot;ul&quot;).prepend(&quot;&lt;li&gt;西瓜&lt;/li&gt;&quot;);
+$(&quot;ul&quot;).prepend(&quot;&lt;li&gt;椰子&lt;/li&gt;&quot;);
+$(&quot;&lt;li&gt;车厘子&lt;/li&gt;&quot;).prependTo($(&quot;ul&quot;));</code></pre></li>
+<li><p>目标.after(内容)    在指定的元素之后 插入元素</p>
+<pre><code>$(&quot;.box&quot;).after(&quot;&lt;span class=&apos;s&apos;&gt;上面卖的是假货&lt;/span&gt;&quot;);</code></pre></li>
+<li><p>内容.insertAfter(目标)    将内容添加到目标之后</p>
+<pre><code>// 如果该内容是页面已有元素，这些元素会被移动到指定的位置
+$(&quot;ul&quot;).insertAfter($(&quot;.box&quot;));</code></pre></li>
+<li><p>目标.before(内容)    将内容添加到目标之前</p>
+<pre><code>$(&quot;.box&quot;).before(&quot;&lt;span&gt;我是新来的span&lt;/span&gt;&quot;);</code></pre></li>
+<li><p>内容.insertBefore(目标)  将内容添加到目标之前</p>
+<pre><code>// 如果该内容是页面已有元素，这些元素会被移动到指定的位置
+$(&quot;.s&quot;).insertBefore($(&quot;.box&quot;));</code></pre><h3 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h3><p> 指定目标.remove()<br> 目标.empty() 清空目标的子节点，但不对目标自身造成影响</p>
+<pre><code>$(&quot;ul&quot;).empty();</code></pre><p> 目标.clone() : 复制，  会返回指定目标的复制体，需要接受或者直接使用</p>
+<pre><code>var $b = $(&quot;.box&quot;).clone();
+$b.appendTo($(&quot;body&quot;));</code></pre></li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-jQ选择器" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/jQ%E9%80%89%E6%8B%A9%E5%99%A8/">jQ选择器</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jQ%E9%80%89%E6%8B%A9%E5%99%A8/" class="article-date">
+  <time datetime="2020-01-19T06:04:25.925Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">    <span class="number">1.</span>id</span><br><span class="line">    <span class="number">2.</span><span class="class"><span class="keyword">class</span></span></span><br><span class="line"><span class="class">    3.标签名</span></span><br><span class="line"><span class="class">    4.通用选择器</span></span><br><span class="line">        $("*").css("color","red");</span><br><span class="line">    <span class="number">5.</span>层级选择器</span><br><span class="line">        <span class="built_in">console</span>.log($(<span class="string">"div&gt;span"</span>).html());</span><br><span class="line">    <span class="number">6.</span>后代</span><br><span class="line">        $(<span class="string">"div span"</span>).html(<span class="string">"哈哈"</span>);</span><br><span class="line">    <span class="number">7.</span>连续的子代</span><br><span class="line">        $(<span class="string">"div&gt;span&gt;span"</span>).html(<span class="string">"呵呵"</span>);</span><br><span class="line">    <span class="number">8.</span>群组选择器</span><br><span class="line">        $(<span class="string">"div,p"</span>).html(<span class="string">"我是新增的"</span>);</span><br><span class="line">    <span class="number">9.</span>交叉选择器</span><br><span class="line">        两个条件必须同时满足</span><br><span class="line">        $(<span class="string">"#btn.box"</span>).css(<span class="string">"background"</span>,<span class="string">"pink"</span>);</span><br><span class="line">    <span class="number">10.</span> 紧邻选择器</span><br><span class="line">        条件<span class="number">1</span>: 紧挨着制定目标  (这里的指定目标： .box)</span><br><span class="line">        条件<span class="number">2</span>： 需要在目标的下方书写</span><br><span class="line">        $(<span class="string">".box+p"</span>).html(<span class="string">"我是一个段落"</span>);</span><br><span class="line">    <span class="number">11.</span> 同辈选择器（同级选择器,同胞选择器)</span><br><span class="line">        可以获取到目标下方 所有的元素(无论是否紧邻)</span><br><span class="line">        $(<span class="string">".box~p"</span>).css(<span class="string">"background"</span>,<span class="string">"yellow"</span>);</span><br><span class="line">过滤选择器</span><br><span class="line">    <span class="number">1.</span>:first   匹配到第一个符合条件的元素</span><br><span class="line">        $(<span class="string">'li:first'</span>).css(<span class="string">"background"</span>,<span class="string">"yellow"</span>);</span><br><span class="line">    <span class="number">2.</span>:last   匹配到最后一个符合条件的元素</span><br><span class="line">        $(<span class="string">'li:last'</span>).css(<span class="string">"background"</span>,<span class="string">"red"</span>);</span><br><span class="line">    <span class="number">3.</span>:not 除了()中指定的条件，获取:前指定的所有元素，</span><br><span class="line">        $(<span class="string">"li:not(.list)"</span>).html(<span class="string">"我是一个Li"</span>);</span><br><span class="line">    <span class="number">4.</span>:even 索引为偶数的</span><br><span class="line">        $(<span class="string">"li:even"</span>).css(<span class="string">"background"</span>,<span class="string">"blue"</span>);</span><br><span class="line">    <span class="number">5.</span>:odd  索引为奇数</span><br><span class="line">        $(<span class="string">"li:odd:not(.list)"</span>).css(<span class="string">"background"</span>,<span class="string">"pink"</span>);</span><br><span class="line">    <span class="number">6.</span>:eq(指定索引值)</span><br><span class="line">        $(<span class="string">"li:eq(0)"</span>).html(<span class="string">"我是一个开头"</span>);</span><br><span class="line">    <span class="number">7.</span>:gt(大于索引值)</span><br><span class="line">        $(<span class="string">"li:gt(1)"</span>).html(<span class="string">"我是被修改的"</span>);</span><br><span class="line">    <span class="number">8.</span>:lt(小于索引值)</span><br><span class="line">        $(<span class="string">"li:lt(5)"</span>).css(<span class="string">"color"</span>,<span class="string">"black"</span>);</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">方法：</span><br><span class="line">    <span class="number">1.</span>后代选择器和 find()方法</span><br><span class="line">        $(<span class="string">"p span"</span>).html(<span class="string">"我被html方法改了"</span>);</span><br><span class="line"></span><br><span class="line">        搜索所有段落中的后代 span 元素，并将其颜色设置为红色：</span><br><span class="line">        $(<span class="string">"p"</span>).find(<span class="string">"span"</span>).css(<span class="string">"background"</span>,<span class="string">"red"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="number">2.</span>子元素选择器和 children 方法</span><br><span class="line">        $(<span class="string">"p&gt;span"</span>).css(<span class="string">"color"</span>,<span class="string">"blue"</span>);</span><br><span class="line"></span><br><span class="line">        取得一个包含 匹配的元素集合中 每一个元素的所有子元素的元素集合</span><br><span class="line">        描述:查找DIV中的每个子元素。</span><br><span class="line">        $(<span class="string">"p"</span>).children().css(<span class="string">"fontSize"</span>,<span class="string">"30px"</span>);</span><br><span class="line"></span><br><span class="line">        描述：在每个div中查找 .selected 的类</span><br><span class="line">        $(<span class="string">"div"</span>).children(<span class="string">".selected"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="number">3.</span>紧邻选择器和 next()方法    下一个紧邻的</span><br><span class="line">        $(<span class="string">".d+button"</span>).html(<span class="string">"点我"</span>);</span><br><span class="line">        $(<span class="string">".d"</span>).next().css(<span class="string">"color"</span>,<span class="string">"blue"</span>);</span><br><span class="line">    <span class="number">4.n</span>extAll 方法</span><br><span class="line">        $(<span class="string">".d"</span>).nextAll(<span class="string">"button"</span>).html(<span class="string">"哈哈哈"</span>);</span><br><span class="line">    <span class="number">5.</span>prev 方法    上一个紧邻的</span><br><span class="line">        $(<span class="string">".d"</span>).prev().html(<span class="string">"我是新来的div"</span>);</span><br><span class="line">    <span class="number">6.</span>prevAll 方法</span><br><span class="line">        $(<span class="string">".d"</span>).prevAll().html(<span class="string">"我是新来的div"</span>);  <span class="comment">// innerHTML</span></span><br><span class="line">        $(<span class="string">".d"</span>).prevAll(<span class="string">"span"</span>).text(<span class="string">"我是新来的div"</span>); <span class="comment">// innerText</span></span><br><span class="line">        $(<span class="string">"input"</span>).val(); <span class="comment">//input框的 value</span></span><br><span class="line">    <span class="number">7.</span>siblings 方法</span><br><span class="line">        <span class="built_in">console</span>.log($(<span class="string">".d"</span>).siblings());</span><br></pre></td></tr></table></figure></div>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
+    <article id="post-JQ设置css样式" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/JQ%E8%AE%BE%E7%BD%AEcss%E6%A0%B7%E5%BC%8F/">JQ设置css样式</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/JQ%E8%AE%BE%E7%BD%AEcss%E6%A0%B7%E5%BC%8F/" class="article-date">
+  <time datetime="2020-01-19T05:58:52.648Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<h3 id="通过jq获取HTML元素"><a href="#通过jq获取HTML元素" class="headerlink" title="通过jq获取HTML元素"></a>通过jq获取HTML元素</h3><p><code>var oDiv = $(&quot;.box&quot;);</code></p>
+<h3 id="设置css样式"><a href="#设置css样式" class="headerlink" title="设置css样式"></a>设置css样式</h3><pre><code>css(参数1,参数2);
+参数1： 属性名，参数2： 属性值
+只有参数1时 ：  会返回值指定属性名的值
+有两个参数时：   会修改修改指定属性名的值
+一个参数是获取，两个参数是修改</code></pre><h3 id="jq的优点之一：-链式编程"><a href="#jq的优点之一：-链式编程" class="headerlink" title="jq的优点之一：  链式编程"></a>jq的优点之一：  链式编程</h3><p><code>$(&quot;.box&quot;).css(&quot;color&quot;,&quot;red&quot;).css(&quot;fontSize&quot;,&quot;30px&quot;);</code><br>    链式写法的简单方式 – 对象<br>    冒号赋值， 逗号间隔<br>    最后一个属性结尾，不需要任何符号</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">".box"</span>).css(&#123;</span><br><span class="line">width:<span class="string">'100px'</span>,</span><br><span class="line">height:<span class="string">'100px'</span>,</span><br><span class="line">color: <span class="string">'green'</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></div>
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="post-jquery" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -158,401 +509,6 @@ var $b = $(oDiv);</code></pre></li>
 </article>
 
   
-    <article id="post-BOM" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/BOM/">BOM</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/BOM/" class="article-date">
-  <time datetime="2020-01-19T02:37:17.986Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<h4 id="Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持-window-对象。它代表浏览器的窗口。所有全局-JavaScript-对象，函数和变量自动成为-window-对象的成员。全局变量是-window-对象的属性。全局函数是-window-对象的方法。甚至（HTML-DOM-的）document-对象也是-window-对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸："><a href="#Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持-window-对象。它代表浏览器的窗口。所有全局-JavaScript-对象，函数和变量自动成为-window-对象的成员。全局变量是-window-对象的属性。全局函数是-window-对象的方法。甚至（HTML-DOM-的）document-对象也是-window-对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸：" class="headerlink" title="Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持 window 对象。它代表浏览器的窗口。所有全局 JavaScript 对象，函数和变量自动成为 window 对象的成员。全局变量是 window 对象的属性。全局函数是 window 对象的方法。甚至（HTML DOM 的）document 对象也是 window 对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸："></a>Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持 window 对象。它代表浏览器的窗口。所有全局 JavaScript 对象，函数和变量自动成为 window 对象的成员。全局变量是 window 对象的属性。全局函数是 window 对象的方法。甚至（HTML DOM 的）document 对象也是 window 对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸：</h4><pre><code>* window.innerHeight - 浏览器窗口的内高度（以像素计）
-* window.innerWidth - 浏览器窗口的内宽度（以像素计）</code></pre><h3 id="浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于-Internet-Explorer-8-7-6-5："><a href="#浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于-Internet-Explorer-8-7-6-5：" class="headerlink" title="浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于 Internet Explorer 8, 7, 6, 5："></a>浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于 Internet Explorer 8, 7, 6, 5：</h3><pre><code>* document.documentElement.clientHeight
-* document.documentElement.clientWidth</code></pre><h3 id="或"><a href="#或" class="headerlink" title="或"></a>或</h3><pre><code>* document.body.clientHeight
-* document.body.clientWidth
-
-* window.open() - 打开新窗口
-* window.close() - 关闭当前窗口
-* window.moveTo() -移动当前窗口
-* window.resizeTo() -重新调整当前窗口</code></pre><h4 id="window-screen-对象包含用户屏幕的信息window-screen-对象不带-window-前缀也可以写属性："><a href="#window-screen-对象包含用户屏幕的信息window-screen-对象不带-window-前缀也可以写属性：" class="headerlink" title="window.screen 对象包含用户屏幕的信息window.screen 对象不带 window 前缀也可以写属性："></a>window.screen 对象包含用户屏幕的信息window.screen 对象不带 window 前缀也可以写属性：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">screen.width             属性返回以像素计的访问者屏幕宽度    </span><br><span class="line">screen.height             属性返回以像素计的访问者屏幕的高度。    </span><br><span class="line">screen.availWidth     属性返回访问者屏幕的宽度，以像素计，减去诸如窗口工具条之类的界面特征。    </span><br><span class="line">screen.availHeight     属性返回访问者屏幕的高度，以像素计，减去诸如窗口工具条之类的界面特征    </span><br><span class="line">screen.colorDepth     属性返回用于显示一种颜色的比特数    </span><br><span class="line">screen.pixelDepth     属性返回屏幕的像素深度<span class="built_in">window</span>.location     对象可用于获取当前页面地址（URL）并把浏览器重定向到新页面。<span class="built_in">window</span>.location 对象可不带 <span class="built_in">window</span> 前缀书写。    </span><br><span class="line"><span class="built_in">window</span>.location.href             返回当前页面的 href (URL)    </span><br><span class="line"><span class="built_in">window</span>.location.hostname   返回 web 主机的域名    </span><br><span class="line"><span class="built_in">window</span>.location.pathname   返回当前页面的路径或文件名    </span><br><span class="line"><span class="built_in">window</span>.location.protocol      返回使用的 web 协议（http: 或 https:）    </span><br><span class="line"><span class="built_in">window</span>.location.assign         加载新文档<span class="built_in">window</span>.history 对象包含浏览器历史。<span class="built_in">window</span>.history 对象可不带 <span class="built_in">window</span> 书写。为了保护用户的隐私，JavaScript 访问此对象存在限制。    </span><br><span class="line">history.back() - 等同于在浏览器点击后退按钮    </span><br><span class="line">history.forward() - 等同于在浏览器中点击前进按钮<span class="built_in">window</span>.navigator 对象包含有关访问者的信息。<span class="built_in">window</span>.navigator 对象可以不带 <span class="built_in">window</span> 前缀来写。    </span><br><span class="line">cookieEnabled 属性返回 <span class="literal">true</span>，如果 cookie 已启用，否则返回 <span class="literal">false</span>    </span><br><span class="line">navigator.appName         属性返回浏览器的应用程序名称    </span><br><span class="line">navigator.appCodeName     属性返回浏览器的应用程序代码名称    </span><br><span class="line">navigator.platform             属性返回浏览器引擎的产品名称     </span><br><span class="line">navigator.appVersion    属性返回有关浏览器的版本信息    </span><br><span class="line">navigator.userAgent         属性返回由浏览器发送到服务器的用户代理报头（user-agent header）    </span><br><span class="line">language 属性返回浏览器语言：    onLine 属性返回 <span class="literal">true</span>，假如浏览器在线：    </span><br><span class="line">javaEnabled() 方法返回 <span class="literal">true</span>，如果 Java 已启用：</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-事件流" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/">事件流</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/" class="article-date">
-  <time datetime="2020-01-19T02:34:02.176Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<h3 id="事件流："><a href="#事件流：" class="headerlink" title="事件流："></a>事件流：</h3><pre><code>从页面中接受事件的顺序</code></pre><h3 id="事件捕获："><a href="#事件捕获：" class="headerlink" title="事件捕获："></a>事件捕获：</h3><pre><code>不太具体的DOM节点应该更早接收到事件，而最具体的节点应该最后接收到事件、
-从上到下，从不具体到具体</code></pre><h3 id="事件冒泡："><a href="#事件冒泡：" class="headerlink" title="事件冒泡："></a>事件冒泡：</h3><pre><code>IE的事件流叫做事件冒泡
-即事件开始时，有最具体的元素接受，然后逐级向上传播到较为不具体的节点
-从下到上，从具体到不具体</code></pre><h3 id="三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段"><a href="#三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段" class="headerlink" title="三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段"></a>三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段</h3><pre><code>事件的目标在捕获阶段不会接受到事件，下一阶段处于目标阶段，事件在目标上发生，
-    在事件处理中被看成冒泡阶段的一部分</code></pre>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-事件对象" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/">事件对象</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/" class="article-date">
-  <time datetime="2020-01-19T02:27:26.417Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<h3 id="事件对象："><a href="#事件对象：" class="headerlink" title="事件对象："></a>事件对象：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>指针的指向问题</span><br><span class="line">    <span class="number">1.</span>在普通函数外部调用的时候</span><br><span class="line">        <span class="keyword">var</span> a = <span class="number">20</span>;(相当于<span class="built_in">window</span>.a = <span class="number">20</span>)</span><br><span class="line">        alert(<span class="keyword">this</span>);    指向<span class="built_in">window</span></span><br><span class="line">        alert(<span class="keyword">this</span>.a); 输出<span class="number">20</span>，指向<span class="built_in">window</span>.a</span><br><span class="line">    <span class="number">2.</span>在普通内部调用的时候</span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">text</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line">            alert(a);    输出<span class="number">10</span></span><br><span class="line">            alert(<span class="keyword">this</span>.a);输出undedined,<span class="keyword">this</span>指向<span class="built_in">window</span></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="number">3.</span>和<span class="keyword">new</span>构造器结合使用</span><br><span class="line">        <span class="keyword">var</span> x1=<span class="keyword">new</span> text( )</span><br><span class="line">        <span class="keyword">var</span> x2=<span class="keyword">new</span> text( )</span><br><span class="line">        <span class="keyword">var</span> c = x1 * b;</span><br><span class="line">    <span class="number">4.</span>对于自执行匿名函数而言    <span class="keyword">this</span> 指向<span class="built_in">window</span></span><br></pre></td></tr></table></figure>
-<h3 id="event对象"><a href="#event对象" class="headerlink" title="event对象"></a>event对象</h3><pre><code>在事件发生时，负责处理事件的函数，会接收一个event对象
-浏览器负责处理事件，js负责高速浏览器如何处理
-作用：用来储存事件源的信息（鼠标位置，键盘编码）
-属性：兼容写法    var ev = ev||window.event</code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ev.garget        返回事件源</span><br><span class="line">ev.button        返回被鼠标按下的那个键    <span class="number">0</span>/左键，<span class="number">1</span>/中键，<span class="number">2</span>/右键</span><br><span class="line">ev.offsetX/Y    鼠标在元素上X/Y轴的位置</span><br><span class="line">ev.clientX/Y     鼠标在浏览器可视区域X/Y轴上的位置（左边距）</span><br><span class="line">ev.keyCode     返回键盘编码，以次来确定是哪个键位</span><br><span class="line">ev.scrollX/Y     文档当前从原点水平滚动的像素数</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-键盘事件" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/">键盘事件</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/" class="article-date">
-  <time datetime="2020-01-19T02:25:53.253Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<pre><code>1.onkeydown:  用户按下键位的时候触发
-2.onkeyup :   用户抬起键位时
-3.onkeypress: 用户按下该键位 再抬起时触发
-4.keyCode:    键盘编码
-5.focus：     谁调用，就将焦点赋给谁</code></pre><h3 id="cursor-鼠标样式"><a href="#cursor-鼠标样式" class="headerlink" title="cursor:鼠标样式"></a>cursor:鼠标样式</h3><pre><code>默认属性值为：auto（根据上下文自动确认最合适的光标）
-default:正常选择(客户端默认的类型）
-help：帮助选择
-wait：忙（转圈圈）
-crosshair：精确选择（十字）
-text：文本选择
-s-resize:垂直调整
-w-resize:水平调整
-se-resize:沿对角线调整（左上到右下）
-ne-resize:沿对角线调整（左下到右上）
-move:移动（十字箭头）
-pointer:链接选择（小手）
-url（&quot;小图片地址&quot;）</code></pre><h3 id="event对象：-表示事件源本身"><a href="#event对象：-表示事件源本身" class="headerlink" title="event对象： 表示事件源本身"></a>event对象： 表示事件源本身</h3><pre><code>我们在使用的时候，以形参的形式来使用，实参由事件本身传递
-使用时，一定符合见名知意： 例如： event  ev  evt  e</code></pre>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-事件类型" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%B1%BB%E5%9E%8B/">事件类型</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%B1%BB%E5%9E%8B/" class="article-date">
-  <time datetime="2020-01-19T02:24:44.908Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<pre><code>1.onload : 当页面(html,图片之类)加载完成后，执行的方法该方法用于，包裹所有
-    内联js代码
-    1). 解决js获取html标签时，标签还没有加载的情况
-    2). 先加载页面，再加载功能。 能够提高用户体验
-    window.onload = function(){
-        这里存放 所有内联的js代码
-        以保证,先加载页面,再加载js功能              
-    }     
-2.onblur： 失去焦点
-    ipt1.onblur = function(){
-        console.log(&quot;我失去了焦点&quot;);
-    }
-3.onfocus: 获得焦点
-    ipt1.onfocus = function(){
-        console.log(&quot;我获得了焦点&quot;);
-    }
-4.onselect: 选中文本时触发
-    ipt1.onselect = function(){
-        console.log(&quot;我被选中了&quot;);
-    }
-5.onchange: 在内容发生改变是触发
-    ipt1.onchange = function(){
-        console.log(&quot;我被改了&quot;);
-    }
-6.onreset: 重置时触发
-    var res = document.getElementsByClassName(&quot;re&quot;)[0];
-    res.onreset = function (){
-        console.log(&quot;我被重置了&quot;);
-    }
-7.ondblclick: 双击时触发
-    var but = document.getElementsByClassName(&quot;btn&quot;)[0];
-    but.ondblclick = function(){
-        console.log(&quot;我被双击了&quot;);
-    }
-8.onmouseover:鼠标移入时触发
-9.onmouseout:鼠标移出时触发
-10.onmousedown：用户在指定元素身上按下时触发
-   除非情景需要按下和抬起各执行一个功能，否则不使用
-11.onmouseup：抬起时触发</code></pre>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-单击事件" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/%E5%8D%95%E5%87%BB%E4%BA%8B%E4%BB%B6/">单击事件</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/%E5%8D%95%E5%87%BB%E4%BA%8B%E4%BB%B6/" class="article-date">
-  <time datetime="2020-01-19T02:20:47.460Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<h3 id="给元素添加-单击事件"><a href="#给元素添加-单击事件" class="headerlink" title="给元素添加 单击事件"></a>给元素添加 单击事件</h3><h5 id="onclick-鼠标的单击事件"><a href="#onclick-鼠标的单击事件" class="headerlink" title="onclick:  鼠标的单击事件"></a>onclick:  鼠标的单击事件</h5><pre><code>方式一：  获取元素，在js中给元素绑定
-    备注： 直接赋值使用，不需要函数名
-    xx.onclick=function(){
-        需要执行的任务
-    }
-    方式二： 定义好函数， 在html标签中 绑定函数
-    function XXX(){
-        需要执行的任务
-    }</code></pre><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button onclick='XXX()'&gt;按钮&lt;/button&gt;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-定时器" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/">定时器</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/" class="article-date">
-  <time datetime="2020-01-19T02:15:16.292Z" itemprop="datePublished">2020-01-19</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<h3 id="setInterval-参数1，参数2-会去重复执行某一个功能"><a href="#setInterval-参数1，参数2-会去重复执行某一个功能" class="headerlink" title="setInterval(参数1，参数2): 会去重复执行某一个功能"></a>setInterval(参数1，参数2): 会去重复执行某一个功能</h3><p>参数1：  每次执行的具体任务, 自定义<br>参数2：  每次执行的间隔时间, 自定义    单位为毫秒</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> timer=setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;,<span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="一次性定时器："><a href="#一次性定时器：" class="headerlink" title="一次性定时器："></a>一次性定时器：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(参数<span class="number">1</span>，参数<span class="number">2</span>):只执行一次的定时器</span><br></pre></td></tr></table></figure>
-<p>参数1：执行的具体任务<br>参数2：间隔多久执行（延迟）</p>
-<h3 id="清除定时器："><a href="#清除定时器：" class="headerlink" title="清除定时器："></a>清除定时器：</h3><p>1.需要记录器（变量自增），达到条件时触发<br>2.定义定时其实，需定义变量来保存定时器</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">clearInterval(变量名称）</span><br><span class="line">clearTimeout(变量名称）</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
-    <article id="post-Date" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/15/Date/">Date</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/01/15/Date/" class="article-date">
-  <time datetime="2020-01-15T07:29:53.893Z" itemprop="datePublished">2020-01-15</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <hr>
-<h3 id="创建一个Date对象"><a href="#创建一个Date对象" class="headerlink" title="创建一个Date对象"></a>创建一个Date对象</h3><pre><code>概念： Date对象是用来处理时间和日期，内置了一系列获取和设置日期和时间的方法
-使用：
-    1.每次在使用它之前，都需要配合new关键字， 来生成一个Date对象，
-    2.然后通过Date对象，再去调用各种方法
-    Date获取的是当前计算机的本地时间
-    var date = new Date();
-时间格式转换：toLocaleString()： 可把时间对象 转换为字符串(我们需要的格式)
-getTime(): 返回的是  1970年1月1日距今的 毫秒数
-在下面的练习中， 我们将计算出，从1970/1/1至今 过去多少年    </code></pre><h3 id="——————-设置-时间和日期-——————–"><a href="#——————-设置-时间和日期-——————–" class="headerlink" title="—————— 设置  时间和日期 ——————–"></a>—————— 设置  时间和日期 ——————–</h3><pre><code>1.setTime(): 以毫秒数 设置Date对象
-    date.setTime(93599945322);
-2.setFullYear():  设置  年  月  日    备注：  月份 取值  0 ~ 11
-    date.setFullYear(2019,7,24);
-3.setMonth() : 设置   月  日 毫秒
-    date.setMonth(7,24);
-4.setHours() : 设置 时  分 秒 毫秒
-    date.setHours(12,0,0);
-5.setMinutes():  分 秒  毫秒
-    date.setMinutes();</code></pre><h3 id="——————-获取时间-和-日期-———————"><a href="#——————-获取时间-和-日期-———————" class="headerlink" title="——————- 获取时间 和 日期 ———————"></a>——————- 获取时间 和 日期 ———————</h3><pre><code>1.获取年份：console.log(date.getFullYear());
-2.获取月份（0~11）console.log(date.getMonth());
-3.获取一个月中的第几天：console.log(date.getDate());
-4.获取一周中的第几天：console.log(date.getDay());
-5.获取小时：console.log(date.getHours());
-6.获取分钟：console.log(date.getMinutes());
-7.获取秒数：console.log(date.getSeconds());</code></pre>
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
 
 
   <nav id="page-nav">
@@ -569,7 +525,7 @@ getTime(): 返回的是  1970年1月1日距今的 毫秒数
     <img class="avatar" src="/images/default-avatar.jpg" title="图片来自网络"></img>
     <h3 class="avatar-name">
       
-        一路烟霞
+        Ma
       
     </h3>
     <p class="avatar-slogan">
@@ -604,23 +560,23 @@ getTime(): 返回的是  1970年1月1日距今的 毫秒数
       <ul>
         
           <li>
-            <a href="/2020/01/19/jquery/">jquery</a>
+            <a href="/2020/01/19/jq%E7%9A%84%E4%BC%98%E7%82%B9%E5%92%8C%E8%A1%A5%E5%85%85/">jq的优点和补充</a>
           </li>
         
           <li>
-            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/">事件监听</a>
+            <a href="/2020/01/19/jq%E5%B0%81%E8%A3%85%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/">jq封装函数功能</a>
           </li>
         
           <li>
-            <a href="/2020/01/19/BOM/">BOM</a>
+            <a href="/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/">对象的创建和使用</a>
           </li>
         
           <li>
-            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/">事件流</a>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/">事件委托</a>
           </li>
         
           <li>
-            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/">事件对象</a>
+            <a href="/2020/01/19/jQ%E5%8A%A8%E7%94%BB/">jQ动画</a>
           </li>
         
       </ul>
@@ -631,6 +587,12 @@ getTime(): 返回的是  1970年1月1日距今的 毫秒数
       <div class="widget-box">
     <h3 class="widget-title">友链</h3>
     <div class="widget">
+      
+        <a style="display: block;" href="https://baidu.com/" title target='_blank'
+        >百度</a>
+      
+        <a style="display: block;" href="https://google.com/" title target='_blank'
+        >google</a>
       
     </div>
   </div>

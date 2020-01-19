@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>jQ动画 | loading.....</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="1234567891011121314151617181920212223242526272829303132331. 目标.hide()  让目标隐藏（修改的display属性）        小括号中，可是设置动画执行的时间2. 目标.show()  让目标显示        小括号中，可以设置动画执行的时间3. 目标.toggle()        会先判断目标的属性，如果是显示，就设置为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQ动画">
+<meta property="og:url" content="https://www.macloud.top/2020/01/19/jQ%E5%8A%A8%E7%94%BB/index.html">
+<meta property="og:site_name" content="loading.....">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132331. 目标.hide()  让目标隐藏（修改的display属性）        小括号中，可是设置动画执行的时间2. 目标.show()  让目标显示        小括号中，可以设置动画执行的时间3. 目标.toggle()        会先判断目标的属性，如果是显示，就设置为">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-19T06:14:56.710Z">
+<meta property="article:modified_time" content="2020-01-19T06:18:08.581Z">
+<meta property="article:author" content="matian">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="loading....." type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/default-avatar.jpg">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-jQ动画" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      jQ动画
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jQ%E5%8A%A8%E7%94%BB/" class="article-date">
+  <time datetime="2020-01-19T06:14:56.710Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 目标.hide()  让目标隐藏（修改的display属性）</span><br><span class="line">        小括号中，可是设置动画执行的时间</span><br><span class="line"><span class="number">2.</span> 目标.show()  让目标显示</span><br><span class="line">        小括号中，可以设置动画执行的时间</span><br><span class="line"><span class="number">3.</span> 目标.toggle()</span><br><span class="line">        会先判断目标的属性，如果是显示，就设置为隐藏</span><br><span class="line">        如果是隐藏，就设置为显示</span><br><span class="line"><span class="number">4.</span> 目标.fadeIn()    淡入</span><br><span class="line">        小括号中，可是设置动画执行的时间</span><br><span class="line"><span class="number">5.</span> 目标.fadeOut()    谈出</span><br><span class="line">        小括号中，可是设置动画执行的时间</span><br><span class="line"><span class="number">6.</span> 目标.fadeToggle()    淡入/淡出</span><br><span class="line"><span class="number">7.</span> 目标.fadeTo()    渐变到指定的透明度</span><br><span class="line"><span class="number">8.</span> 目标.slideDown()    滑入</span><br><span class="line">       $(<span class="string">".btn:eq(5)"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="string">".box"</span>).slideDown(<span class="number">2000</span>);</span><br><span class="line">       &#125;);</span><br><span class="line"><span class="number">9.</span> 目标.slideUp()    滑出</span><br><span class="line">       $(<span class="string">".btn:eq(6)"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="string">".box"</span>).slideUp(<span class="number">2000</span>);</span><br><span class="line">       &#125;);</span><br><span class="line">       $(<span class="string">".btn:eq(7)"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">           $(<span class="string">".box"</span>).slideToggle(<span class="number">2000</span>);</span><br><span class="line">       &#125;);</span><br><span class="line"><span class="number">10.</span> 目标.slideToggle()    滑入/滑出</span><br><span class="line">animate</span><br><span class="line">$(<span class="string">".text:first"</span>).animate(&#123;</span><br><span class="line">                   <span class="string">'opacity'</span>: <span class="number">1</span>,</span><br><span class="line">                   fontSize: <span class="string">"40px"</span></span><br><span class="line">               &#125;, <span class="number">5000</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                   $(<span class="keyword">this</span>).animate(&#123;</span><br><span class="line">                       fontSize: <span class="string">"16px"</span></span><br><span class="line">                   &#125;, <span class="number">3000</span>)</span><br></pre></td></tr></table></figure></div>
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            事件委托
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2020/01/19/jQ%E6%93%8D%E4%BD%9CDOM/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">jQ操作DOM</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/default-avatar.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        Ma
+      
+    </h3>
+    <p class="avatar-slogan">
+      特别耐撕的小前端，资深的打酱油攻城狮。
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/19/jq%E7%9A%84%E4%BC%98%E7%82%B9%E5%92%8C%E8%A1%A5%E5%85%85/">jq的优点和补充</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/jq%E5%B0%81%E8%A3%85%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/">jq封装函数功能</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/">对象的创建和使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/">事件委托</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/jQ%E5%8A%A8%E7%94%BB/">jQ动画</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://baidu.com/" title target='_blank'
+        >百度</a>
+      
+        <a style="display: block;" href="https://google.com/" title target='_blank'
+        >google</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2020 matian &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a href="https://github.com/yiluyanxia/hexo-theme-antiquity" target="_blank" rel="noopener">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>jQ选择器 | loading.....</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940    1.id    2.class    3.标签名    4.通用选择器        $(&quot;*&quot;).css(&quot;color&quot;,&quot;red&quot;);    5.层级选择器        console.log($(&quot;div&gt;span&quot;).html())">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jQ选择器">
+<meta property="og:url" content="https://www.macloud.top/2020/01/19/jQ%E9%80%89%E6%8B%A9%E5%99%A8/index.html">
+<meta property="og:site_name" content="loading.....">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940    1.id    2.class    3.标签名    4.通用选择器        $(&quot;*&quot;).css(&quot;color&quot;,&quot;red&quot;);    5.层级选择器        console.log($(&quot;div&gt;span&quot;).html())">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-01-19T06:04:25.925Z">
+<meta property="article:modified_time" content="2020-01-19T06:06:12.174Z">
+<meta property="article:author" content="matian">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="loading....." type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/default-avatar.jpg">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-jQ选择器" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      jQ选择器
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2020/01/19/jQ%E9%80%89%E6%8B%A9%E5%99%A8/" class="article-date">
+  <time datetime="2020-01-19T06:04:25.925Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <hr>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">    <span class="number">1.</span>id</span><br><span class="line">    <span class="number">2.</span><span class="class"><span class="keyword">class</span></span></span><br><span class="line"><span class="class">    3.标签名</span></span><br><span class="line"><span class="class">    4.通用选择器</span></span><br><span class="line">        $("*").css("color","red");</span><br><span class="line">    <span class="number">5.</span>层级选择器</span><br><span class="line">        <span class="built_in">console</span>.log($(<span class="string">"div&gt;span"</span>).html());</span><br><span class="line">    <span class="number">6.</span>后代</span><br><span class="line">        $(<span class="string">"div span"</span>).html(<span class="string">"哈哈"</span>);</span><br><span class="line">    <span class="number">7.</span>连续的子代</span><br><span class="line">        $(<span class="string">"div&gt;span&gt;span"</span>).html(<span class="string">"呵呵"</span>);</span><br><span class="line">    <span class="number">8.</span>群组选择器</span><br><span class="line">        $(<span class="string">"div,p"</span>).html(<span class="string">"我是新增的"</span>);</span><br><span class="line">    <span class="number">9.</span>交叉选择器</span><br><span class="line">        两个条件必须同时满足</span><br><span class="line">        $(<span class="string">"#btn.box"</span>).css(<span class="string">"background"</span>,<span class="string">"pink"</span>);</span><br><span class="line">    <span class="number">10.</span> 紧邻选择器</span><br><span class="line">        条件<span class="number">1</span>: 紧挨着制定目标  (这里的指定目标： .box)</span><br><span class="line">        条件<span class="number">2</span>： 需要在目标的下方书写</span><br><span class="line">        $(<span class="string">".box+p"</span>).html(<span class="string">"我是一个段落"</span>);</span><br><span class="line">    <span class="number">11.</span> 同辈选择器（同级选择器,同胞选择器)</span><br><span class="line">        可以获取到目标下方 所有的元素(无论是否紧邻)</span><br><span class="line">        $(<span class="string">".box~p"</span>).css(<span class="string">"background"</span>,<span class="string">"yellow"</span>);</span><br><span class="line">过滤选择器</span><br><span class="line">    <span class="number">1.</span>:first   匹配到第一个符合条件的元素</span><br><span class="line">        $(<span class="string">'li:first'</span>).css(<span class="string">"background"</span>,<span class="string">"yellow"</span>);</span><br><span class="line">    <span class="number">2.</span>:last   匹配到最后一个符合条件的元素</span><br><span class="line">        $(<span class="string">'li:last'</span>).css(<span class="string">"background"</span>,<span class="string">"red"</span>);</span><br><span class="line">    <span class="number">3.</span>:not 除了()中指定的条件，获取:前指定的所有元素，</span><br><span class="line">        $(<span class="string">"li:not(.list)"</span>).html(<span class="string">"我是一个Li"</span>);</span><br><span class="line">    <span class="number">4.</span>:even 索引为偶数的</span><br><span class="line">        $(<span class="string">"li:even"</span>).css(<span class="string">"background"</span>,<span class="string">"blue"</span>);</span><br><span class="line">    <span class="number">5.</span>:odd  索引为奇数</span><br><span class="line">        $(<span class="string">"li:odd:not(.list)"</span>).css(<span class="string">"background"</span>,<span class="string">"pink"</span>);</span><br><span class="line">    <span class="number">6.</span>:eq(指定索引值)</span><br><span class="line">        $(<span class="string">"li:eq(0)"</span>).html(<span class="string">"我是一个开头"</span>);</span><br><span class="line">    <span class="number">7.</span>:gt(大于索引值)</span><br><span class="line">        $(<span class="string">"li:gt(1)"</span>).html(<span class="string">"我是被修改的"</span>);</span><br><span class="line">    <span class="number">8.</span>:lt(小于索引值)</span><br><span class="line">        $(<span class="string">"li:lt(5)"</span>).css(<span class="string">"color"</span>,<span class="string">"black"</span>);</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">方法：</span><br><span class="line">    <span class="number">1.</span>后代选择器和 find()方法</span><br><span class="line">        $(<span class="string">"p span"</span>).html(<span class="string">"我被html方法改了"</span>);</span><br><span class="line"></span><br><span class="line">        搜索所有段落中的后代 span 元素，并将其颜色设置为红色：</span><br><span class="line">        $(<span class="string">"p"</span>).find(<span class="string">"span"</span>).css(<span class="string">"background"</span>,<span class="string">"red"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="number">2.</span>子元素选择器和 children 方法</span><br><span class="line">        $(<span class="string">"p&gt;span"</span>).css(<span class="string">"color"</span>,<span class="string">"blue"</span>);</span><br><span class="line"></span><br><span class="line">        取得一个包含 匹配的元素集合中 每一个元素的所有子元素的元素集合</span><br><span class="line">        描述:查找DIV中的每个子元素。</span><br><span class="line">        $(<span class="string">"p"</span>).children().css(<span class="string">"fontSize"</span>,<span class="string">"30px"</span>);</span><br><span class="line"></span><br><span class="line">        描述：在每个div中查找 .selected 的类</span><br><span class="line">        $(<span class="string">"div"</span>).children(<span class="string">".selected"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="number">3.</span>紧邻选择器和 next()方法    下一个紧邻的</span><br><span class="line">        $(<span class="string">".d+button"</span>).html(<span class="string">"点我"</span>);</span><br><span class="line">        $(<span class="string">".d"</span>).next().css(<span class="string">"color"</span>,<span class="string">"blue"</span>);</span><br><span class="line">    <span class="number">4.n</span>extAll 方法</span><br><span class="line">        $(<span class="string">".d"</span>).nextAll(<span class="string">"button"</span>).html(<span class="string">"哈哈哈"</span>);</span><br><span class="line">    <span class="number">5.</span>prev 方法    上一个紧邻的</span><br><span class="line">        $(<span class="string">".d"</span>).prev().html(<span class="string">"我是新来的div"</span>);</span><br><span class="line">    <span class="number">6.</span>prevAll 方法</span><br><span class="line">        $(<span class="string">".d"</span>).prevAll().html(<span class="string">"我是新来的div"</span>);  <span class="comment">// innerHTML</span></span><br><span class="line">        $(<span class="string">".d"</span>).prevAll(<span class="string">"span"</span>).text(<span class="string">"我是新来的div"</span>); <span class="comment">// innerText</span></span><br><span class="line">        $(<span class="string">"input"</span>).val(); <span class="comment">//input框的 value</span></span><br><span class="line">    <span class="number">7.</span>siblings 方法</span><br><span class="line">        <span class="built_in">console</span>.log($(<span class="string">".d"</span>).siblings());</span><br></pre></td></tr></table></figure></div>
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+      <a href="/2020/01/19/jQ%E6%93%8D%E4%BD%9CDOM/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption"></strong>
+        <div class="article-nav-title">
+          
+            jQ操作DOM
+          
+        </div>
+      </a>
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2020/01/19/JQ%E8%AE%BE%E7%BD%AEcss%E6%A0%B7%E5%BC%8F/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">JQ设置css样式</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/default-avatar.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        Ma
+      
+    </h3>
+    <p class="avatar-slogan">
+      特别耐撕的小前端，资深的打酱油攻城狮。
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/01/19/jq%E7%9A%84%E4%BC%98%E7%82%B9%E5%92%8C%E8%A1%A5%E5%85%85/">jq的优点和补充</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/jq%E5%B0%81%E8%A3%85%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/">jq封装函数功能</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/">对象的创建和使用</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/">事件委托</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/jQ%E5%8A%A8%E7%94%BB/">jQ动画</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://baidu.com/" title target='_blank'
+        >百度</a>
+      
+        <a style="display: block;" href="https://google.com/" title target='_blank'
+        >google</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2020 matian &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a href="https://github.com/yiluyanxia/hexo-theme-antiquity" target="_blank" rel="noopener">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>

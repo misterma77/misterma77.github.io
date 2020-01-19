@@ -5,20 +5,20 @@
   
 
   
-  <title>字符串 | loading.....</title>
+  <title>对象的创建和使用 | loading.....</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
-  <meta name="description" content="创建一个字符串传统的方式通过new关键字 来创建的是 一个对象1234567String对象 来处理字符串备注： 如果不加new， 单独的String(值)，只是将值转换为字符串    var str &#x3D; new String(&quot;yang&quot;);    console.log(typeof str);字面量的方式    var str_two &#x3D; &#39;abcDg&#39;;    console.log(t">
+  <meta name="description" content="12345var obj &#x3D; &amp;#123; &amp;#125;        创建一个空对象obj.name &#x3D; &quot;xx&quot;;如果该对象有name这个属性，name找到这个属性并赋值；如果没有name这个属性，那么创建这个属性，再赋值obj[age] &#x3D; &quot;19&quot;        通过中括号访问var obj1&#x3D; &amp;#123; &quot;name&quot; : &quot;xxx&quot; , &quot;name&quot; : &quot;xx&quot;&amp;#125;;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="字符串">
-<meta property="og:url" content="https://www.macloud.top/2020/01/15/%E5%AD%97%E7%AC%A6%E4%B8%B2/index.html">
+<meta property="og:title" content="对象的创建和使用">
+<meta property="og:url" content="https://www.macloud.top/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="loading.....">
-<meta property="og:description" content="创建一个字符串传统的方式通过new关键字 来创建的是 一个对象1234567String对象 来处理字符串备注： 如果不加new， 单独的String(值)，只是将值转换为字符串    var str &#x3D; new String(&quot;yang&quot;);    console.log(typeof str);字面量的方式    var str_two &#x3D; &#39;abcDg&#39;;    console.log(t">
+<meta property="og:description" content="12345var obj &#x3D; &amp;#123; &amp;#125;        创建一个空对象obj.name &#x3D; &quot;xx&quot;;如果该对象有name这个属性，name找到这个属性并赋值；如果没有name这个属性，那么创建这个属性，再赋值obj[age] &#x3D; &quot;19&quot;        通过中括号访问var obj1&#x3D; &amp;#123; &quot;name&quot; : &quot;xxx&quot; , &quot;name&quot; : &quot;xx&quot;&amp;#125;;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-01-15T07:24:40.160Z">
-<meta property="article:modified_time" content="2020-01-15T07:26:00.870Z">
+<meta property="article:published_time" content="2020-01-19T06:28:54.937Z">
+<meta property="article:modified_time" content="2020-01-19T06:29:10.534Z">
 <meta property="article:author" content="matian">
 <meta name="twitter:card" content="summary">
   
@@ -61,21 +61,21 @@
   </div>
 </header>
       <div id="middlecontent" title class="global-width sidebar-right">
-        <section id="main"><article id="post-字符串" class="article global-container article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-对象的创建和使用" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
       
   
     <h1 class="article-title" itemprop="name">
-      字符串
+      对象的创建和使用
     </h1>
   
 
     </header>
   
   <div class="article-meta">
-    <a href="/2020/01/15/%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="article-date">
-  <time datetime="2020-01-15T07:24:40.160Z" itemprop="datePublished">2020-01-15</time>
+    <a href="/2020/01/19/%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time datetime="2020-01-19T06:28:54.937Z" itemprop="datePublished">2020-01-19</time>
 </a>
     
     
@@ -91,29 +91,7 @@
     <div class="article-content article-content-cloud" itemprop="articleBody">
       
         <hr>
-<h3 id="创建一个字符串"><a href="#创建一个字符串" class="headerlink" title="创建一个字符串"></a>创建一个字符串</h3><h4 id="传统的方式"><a href="#传统的方式" class="headerlink" title="传统的方式"></a>传统的方式</h4><h5 id="通过new关键字-来创建的是-一个对象"><a href="#通过new关键字-来创建的是-一个对象" class="headerlink" title="通过new关键字 来创建的是 一个对象"></a>通过new关键字 来创建的是 一个对象</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span>对象 来处理字符串</span><br><span class="line">备注： 如果不加<span class="keyword">new</span>， 单独的<span class="built_in">String</span>(值)，只是将值转换为字符串</span><br><span class="line">    <span class="keyword">var</span> str = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">"yang"</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> str);</span><br><span class="line">字面量的方式</span><br><span class="line">    <span class="keyword">var</span> str_two = <span class="string">'abcDg'</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">typeof</span> str_two);</span><br></pre></td></tr></table></figure>
-<h3 id="字符串中的方法"><a href="#字符串中的方法" class="headerlink" title="字符串中的方法"></a>字符串中的方法</h3><pre><code>1.replace(参数1,参数2):  替换
-    1.想替换哪个字符串，就用哪个字符串来调用
-    2.参数1是被替换的目标， 参数2是替换的新内容
-    3.会将替换后的字符串，整体返回
-2.substring(参数1,参数2) : 提取 介于两个下标之间的 字符串    包头不包尾  (和数组slice相似)
-    参数1： 开始下标      参数2： 结束下标
-3.substr(参数1,参数2): 可在字符串中 从开始位置截取指定长度的字符串 (和数组splice相似)
-    参数1： 开始位置，  参数2 ： 指定长度
-4.split()方法:  用于把一个字符串 分割成字符串数组(本质上就是个数组，只是存的都是字符串罢了)
-    参数1 ：  分割的依据 
-    参数2：(可选参数)分割后 返回的长度 
-    (超出实际大小，按照实际大小算,小于实际大小的话，按照指定长度返回，超出的不返回)
-5.fromCharCode( ) 接受一个UniCode编码，返回对应字符串
-6.charAt(位置)    返回指定位置的字符
-7. .length    返回字符串的长度
-8.charCodeAt(位置）    返回指定位置字符的Unicode编码
-9.slice(参数1,参数2)    提取指定范围的字符串
-    参数1：开始范围    参数2：结束范围    包头不包尾
-10.indexOf()    返回指定字符的对应下标（首先出现的），如果没有，则返回-1
-11.lastIndexOf()    返回指定字符最后出现的位置
-12.toLowerCase()    字符串转换为小写
-   toUpperCase()    字符串转换为大写</code></pre>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="JS"><figure class="iseeu highlight /js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123; &#125;        创建一个空对象</span><br><span class="line">obj.name = <span class="string">"xx"</span>;</span><br><span class="line">如果该对象有name这个属性，name找到这个属性并赋值；如果没有name这个属性，那么创建这个属性，再赋值</span><br><span class="line">obj[age] = <span class="string">"19"</span>        通过中括号访问</span><br><span class="line"><span class="keyword">var</span> obj1= &#123; <span class="string">"name"</span> : <span class="string">"xxx"</span> , <span class="string">"name"</span> : <span class="string">"xx"</span>&#125;;        在创建时赋值</span><br></pre></td></tr></table></figure></div>
       
     </div>
     
@@ -127,11 +105,11 @@
 <nav id="article-nav">
   <div class="article-nav-block">
     
-      <a href="/2020/01/15/Date/" id="article-nav-newer" class="article-nav-link-wrap">
+      <a href="/2020/01/19/jq%E5%B0%81%E8%A3%85%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption"></strong>
         <div class="article-nav-title">
           
-            Date
+            jq封装函数功能
           
         </div>
       </a>
@@ -139,8 +117,8 @@
   </div>
   <div class="article-nav-block">
     
-      <a href="/2020/01/15/%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">数组</div>
+      <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">事件委托</div>
         <strong class="article-nav-caption"></strong>
       </a>
     
