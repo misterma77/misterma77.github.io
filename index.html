@@ -64,6 +64,141 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-事件监听" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/" class="article-date">
+  <time datetime="2020-01-19T02:46:49.490Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/">事件监听</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="事件监听-addEventListener-参数1，参数2，参数3"><a href="#事件监听-addEventListener-参数1，参数2，参数3" class="headerlink" title="事件监听:  addEventListener(参数1，参数2，参数3)"></a>事件监听:  addEventListener(参数1，参数2，参数3)</h3><pre><code>参数1 ： 事件类型
+参数2 ： 触发事件后执行的函数
+参数3 ： 布尔值   默认值是 false 事件冒泡  ；   true 事件捕获</code></pre><h3 id="普通事件绑定和事件监听的区别："><a href="#普通事件绑定和事件监听的区别：" class="headerlink" title="普通事件绑定和事件监听的区别："></a>普通事件绑定和事件监听的区别：</h3><pre><code>1.普通事件绑定只能给元素相同类型的时间绑定一个，如果绑定第二个会覆盖上
+  事件监听可以给同一个元素的相同类型事件绑定多个
+2.事件监听可以控制事件的传播方式（事件冒泡或事件捕获）
+3.事件监听可以通过删除的方法，来取消事件，而普通绑定只能通过null来取消
+4.事件监听可以对动态生成的元素（未来元素）生效，而普通事件不可以</code></pre><h3 id="删除事件监听-removeEventListener-三个参数"><a href="#删除事件监听-removeEventListener-三个参数" class="headerlink" title="删除事件监听  removeEventListener()三个参数"></a>删除事件监听  removeEventListener()三个参数</h3><pre><code>注意事项：1.相同元素调用
+         2.相同事件名称
+         3.相同函数名(匿名函数不行，需要全局函数)
+         4.相同的执行阶段</code></pre><h2 id="事件委托："><a href="#事件委托：" class="headerlink" title="事件委托："></a>事件委托：</h2><pre><code>利用事件冒泡机制指定一个事件处理程序，来管理某一类型的所有时间
+即利用事件冒泡的原理，把事件加到父级上，触发执行效果
+优点:1.只在内存中开辟了一块空间，节省资源的同时，减少了dom操作，提高性能
+     2.对于新添加的元素也会有之前的事件</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/" data-id="ck5kf90ol0001usw524ac7srg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-BOM" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/19/BOM/" class="article-date">
+  <time datetime="2020-01-19T02:37:17.986Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/BOM/">BOM</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h4 id="Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持-window-对象。它代表浏览器的窗口。所有全局-JavaScript-对象，函数和变量自动成为-window-对象的成员。全局变量是-window-对象的属性。全局函数是-window-对象的方法。甚至（HTML-DOM-的）document-对象也是-window-对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸："><a href="#Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持-window-对象。它代表浏览器的窗口。所有全局-JavaScript-对象，函数和变量自动成为-window-对象的成员。全局变量是-window-对象的属性。全局函数是-window-对象的方法。甚至（HTML-DOM-的）document-对象也是-window-对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸：" class="headerlink" title="Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持 window 对象。它代表浏览器的窗口。所有全局 JavaScript 对象，函数和变量自动成为 window 对象的成员。全局变量是 window 对象的属性。全局函数是 window 对象的方法。甚至（HTML DOM 的）document 对象也是 window 对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸："></a>Bom主要用于管理窗口和窗口之间的通讯，其核心对象为windowwindow对象所有浏览器都支持 window 对象。它代表浏览器的窗口。所有全局 JavaScript 对象，函数和变量自动成为 window 对象的成员。全局变量是 window 对象的属性。全局函数是 window 对象的方法。甚至（HTML DOM 的）document 对象也是 window 对象属性窗口尺寸两个属性可用用于确定浏览器窗口的尺寸。这两个属性都以像素返回尺寸：</h4><pre><code>* window.innerHeight - 浏览器窗口的内高度（以像素计）
+* window.innerWidth - 浏览器窗口的内宽度（以像素计）</code></pre><h3 id="浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于-Internet-Explorer-8-7-6-5："><a href="#浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于-Internet-Explorer-8-7-6-5：" class="headerlink" title="浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于 Internet Explorer 8, 7, 6, 5："></a>浏览器窗口（浏览器视口）不包括工具栏和滚动条。对于 Internet Explorer 8, 7, 6, 5：</h3><pre><code>* document.documentElement.clientHeight
+* document.documentElement.clientWidth</code></pre><h3 id="或"><a href="#或" class="headerlink" title="或"></a>或</h3><pre><code>* document.body.clientHeight
+* document.body.clientWidth
+
+* window.open() - 打开新窗口
+* window.close() - 关闭当前窗口
+* window.moveTo() -移动当前窗口
+* window.resizeTo() -重新调整当前窗口</code></pre><h4 id="window-screen-对象包含用户屏幕的信息window-screen-对象不带-window-前缀也可以写属性："><a href="#window-screen-对象包含用户屏幕的信息window-screen-对象不带-window-前缀也可以写属性：" class="headerlink" title="window.screen 对象包含用户屏幕的信息window.screen 对象不带 window 前缀也可以写属性："></a>window.screen 对象包含用户屏幕的信息window.screen 对象不带 window 前缀也可以写属性：</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">screen.width             属性返回以像素计的访问者屏幕宽度    </span><br><span class="line">screen.height             属性返回以像素计的访问者屏幕的高度。    </span><br><span class="line">screen.availWidth     属性返回访问者屏幕的宽度，以像素计，减去诸如窗口工具条之类的界面特征。    </span><br><span class="line">screen.availHeight     属性返回访问者屏幕的高度，以像素计，减去诸如窗口工具条之类的界面特征    </span><br><span class="line">screen.colorDepth     属性返回用于显示一种颜色的比特数    </span><br><span class="line">screen.pixelDepth     属性返回屏幕的像素深度<span class="built_in">window</span>.location     对象可用于获取当前页面地址（URL）并把浏览器重定向到新页面。<span class="built_in">window</span>.location 对象可不带 <span class="built_in">window</span> 前缀书写。    </span><br><span class="line"><span class="built_in">window</span>.location.href             返回当前页面的 href (URL)    </span><br><span class="line"><span class="built_in">window</span>.location.hostname   返回 web 主机的域名    </span><br><span class="line"><span class="built_in">window</span>.location.pathname   返回当前页面的路径或文件名    </span><br><span class="line"><span class="built_in">window</span>.location.protocol      返回使用的 web 协议（http: 或 https:）    </span><br><span class="line"><span class="built_in">window</span>.location.assign         加载新文档<span class="built_in">window</span>.history 对象包含浏览器历史。<span class="built_in">window</span>.history 对象可不带 <span class="built_in">window</span> 书写。为了保护用户的隐私，JavaScript 访问此对象存在限制。    </span><br><span class="line">history.back() - 等同于在浏览器点击后退按钮    </span><br><span class="line">history.forward() - 等同于在浏览器中点击前进按钮<span class="built_in">window</span>.navigator 对象包含有关访问者的信息。<span class="built_in">window</span>.navigator 对象可以不带 <span class="built_in">window</span> 前缀来写。    </span><br><span class="line">cookieEnabled 属性返回 <span class="literal">true</span>，如果 cookie 已启用，否则返回 <span class="literal">false</span>    </span><br><span class="line">navigator.appName         属性返回浏览器的应用程序名称    </span><br><span class="line">navigator.appCodeName     属性返回浏览器的应用程序代码名称    </span><br><span class="line">navigator.platform             属性返回浏览器引擎的产品名称     </span><br><span class="line">navigator.appVersion    属性返回有关浏览器的版本信息    </span><br><span class="line">navigator.userAgent         属性返回由浏览器发送到服务器的用户代理报头（user-agent header）    </span><br><span class="line">language 属性返回浏览器语言：    onLine 属性返回 <span class="literal">true</span>，假如浏览器在线：    </span><br><span class="line">javaEnabled() 方法返回 <span class="literal">true</span>，如果 Java 已启用：</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/19/BOM/" data-id="ck5kf90ob0000usw56g162rip" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-事件流" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/" class="article-date">
+  <time datetime="2020-01-19T02:34:02.176Z" itemprop="datePublished">2020-01-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/">事件流</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="事件流："><a href="#事件流：" class="headerlink" title="事件流："></a>事件流：</h3><pre><code>从页面中接受事件的顺序</code></pre><h3 id="事件捕获："><a href="#事件捕获：" class="headerlink" title="事件捕获："></a>事件捕获：</h3><pre><code>不太具体的DOM节点应该更早接收到事件，而最具体的节点应该最后接收到事件、
+从上到下，从不具体到具体</code></pre><h3 id="事件冒泡："><a href="#事件冒泡：" class="headerlink" title="事件冒泡："></a>事件冒泡：</h3><pre><code>IE的事件流叫做事件冒泡
+即事件开始时，有最具体的元素接受，然后逐级向上传播到较为不具体的节点
+从下到上，从具体到不具体</code></pre><h3 id="三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段"><a href="#三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段" class="headerlink" title="三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段"></a>三个阶段：事件捕获阶段，处于目标阶段，事件冒泡阶段</h3><pre><code>事件的目标在捕获阶段不会接受到事件，下一阶段处于目标阶段，事件在目标上发生，
+    在事件处理中被看成冒泡阶段的一部分</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/" data-id="ck5kf90op0002usw56r1lafx0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-事件对象" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/" class="article-date">
@@ -440,161 +575,6 @@ getTime(): 返回的是  1970年1月1日距今的 毫秒数
 
 
   
-    <article id="post-数组" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/01/15/%E6%95%B0%E7%BB%84/" class="article-date">
-  <time datetime="2020-01-15T07:18:30.061Z" itemprop="datePublished">2020-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/15/%E6%95%B0%E7%BB%84/">数组</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h3 id="数组："><a href="#数组：" class="headerlink" title="数组："></a>数组：</h3><pre><code>数组是存储1个或多个数据的容器，是一组内存空间，
-通常用来批量处理数据
-这组内存空间的名字叫做数组名
-数组对自身储存的数组元素没有限制，不论数量类型
-通过数组下标（从0开始）来管理和操作数组
-数组名.length    表示数组的长度，也是储存元素的个数；因为下标从0开始，所以数组长度
-    减1表示最后一个元素下标</code></pre><p>创建数组：<br>    创建一个数组<br>        传统写法</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">    <span class="keyword">var</span> str = <span class="keyword">new</span> <span class="built_in">String</span>();</span><br><span class="line"><span class="comment">//字面量(语法糖)</span></span><br><span class="line">    <span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">"haha"</span>];</span><br></pre></td></tr></table></figure>
-<h4 id="访问数组"><a href="#访问数组" class="headerlink" title="访问数组:"></a>访问数组:</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">访问单个元素</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(arr[<span class="number">0</span>]);</span><br><span class="line">访问全部元素</span><br><span class="line">    数组和循环的结合使用</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(arr[i]);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<h5 id="数组越界-访问了不属于该数组的内存空间"><a href="#数组越界-访问了不属于该数组的内存空间" class="headerlink" title="数组越界:  访问了不属于该数组的内存空间"></a>数组越界:  访问了不属于该数组的内存空间</h5><h3 id="数组方法："><a href="#数组方法：" class="headerlink" title="数组方法："></a>数组方法：</h3><pre><code>  1.push( )：将一个元素添加到数组的最后一位
-      数组名.push( 添加的元素 )
-  2.unshift( )：将一个元素添加到数组的第一位
-      数组名.unshift( 添加的元素 ）
-  3.pop( )：删除数组的最后一个元素
-      数组名.pop(  )
-  4.shift( )：删除数组的第一个元素
-      数组名.shift(  )
-  5.slice(开始,结束)：截取数组的指定范围，并返回
-      截取的是开始到结束的前一位（复制新内容）
-  6.splice(开始位置，修改长度）：修改原数据，不复制
-      删除：只规定开始位置与修改长度
-      替换：规定了开始位置，修改长度和新内容
-      插入：新内容的个数多于修改的长度
-  7.join( )：将数组中的元素转换为字符串，拼接并返回
-  8.sort( )：数组排序    从小到大
-  9.reverse( )：倒序排列
-10.cancat：将后者拼接到前者的后面，结合成新的数组
-11.instancdof：运算，判断它是不是一个数组，返回true/false
-     console.log(arr instanceof Array);
-书写方式2：
-Array.isArray(检测对象)
-console.log(Array.isArray(arr));</code></pre><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> s=i+<span class="number">1</span>;s &lt; arr.length<span class="number">-1</span>;s++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] == arr[s])&#123;</span><br><span class="line">        a.splice(s,<span class="number">1</span>);</span><br><span class="line">        --s;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> s=<span class="number">0</span>;s &lt;arr.length<span class="number">-1</span>;s++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] &lt; arr[s])&#123;</span><br><span class="line">            <span class="keyword">var</span> a=arr[i];</span><br><span class="line">            arr[i] = arr[s];</span><br><span class="line">            arr[s] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.macloud.top/2020/01/15/%E6%95%B0%E7%BB%84/" data-id="ck5ez4cze0005vow5epky8sc9" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-随机色" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/" class="article-date">
-  <time datetime="2020-01-15T07:12:06.185Z" itemprop="datePublished">2020-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/">随机色</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h3 id="颜色的赋值"><a href="#颜色的赋值" class="headerlink" title="颜色的赋值:"></a>颜色的赋值:</h3><pre><code>1.通过英文名称
-2.通过rgb三原色调配比例，来赋值
-3.通过16进制位数，来匹配对应的颜色</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgb(140,230,120);</span><br></pre></td></tr></table></figure>
-<p>opacity 透明度<br>    取值范围  0~1<br>    1 为不透明，  0为完全透明<br>    background: red;<br>    opacity: 0.5;<br>    rgba():  4个参数   r g b a<br>    a  :  透明度<br>    必须要四个参数，一个都不能少</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgba(<span class="number">200</span>,<span class="number">100</span>,<span class="number">10</span>,<span class="number">0.6</span>);*<span class="regexp">/</span></span><br><span class="line"><span class="regexp">var box = document.getElementsByClassName("box")[0];</span></span><br><span class="line"><span class="regexp">function c()&#123;</span></span><br><span class="line"><span class="regexp">    return  Math.floor(Math.random()*255);</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/通过使用 rgb三原色 来完成随机颜色的赋值</span></span><br><span class="line"><span class="regexp">box.style.backgroundColor = 'rgb(' + c() + ',' + c() + ','+ c()+ ')';</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.macloud.top/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/" data-id="ck5eyw4sc0004vow56lxu2an7" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Math对象" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/01/15/Math%E5%AF%B9%E8%B1%A1/" class="article-date">
-  <time datetime="2020-01-15T07:07:43.480Z" itemprop="datePublished">2020-01-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/15/Math%E5%AF%B9%E8%B1%A1/">Math对象</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<h3 id="Math对象：-是js提供给开发者的一款内置常见数学公式的对象"><a href="#Math对象：-是js提供给开发者的一款内置常见数学公式的对象" class="headerlink" title="Math对象： 是js提供给开发者的一款内置常见数学公式的对象"></a>Math对象： 是js提供给开发者的一款内置常见数学公式的对象</h3><h5 id="所有Math对象中的方法-都会有返回值。"><a href="#所有Math对象中的方法-都会有返回值。" class="headerlink" title="所有Math对象中的方法, 都会有返回值。"></a>所有Math对象中的方法, 都会有返回值。</h5><p>定义一个随机数</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.random()*(较大的数 - 较小的数) + 较小的数</span><br></pre></td></tr></table></figure>
-<ol>
-<li>范围只确定终点 的随机数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> one = <span class="built_in">Math</span>.random()*<span class="number">10</span>;</span><br><span class="line"><span class="built_in">console</span>.log(one);</span><br></pre></td></tr></table></figure></li>
-<li>范围两端都确定的 随机数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> two = <span class="built_in">Math</span>.random()*(<span class="number">10</span><span class="number">-7</span>)+<span class="number">7</span>;</span><br><span class="line"><span class="built_in">console</span>.log(two);</span><br></pre></td></tr></table></figure></li>
-<li>去掉随机数中 的小数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">Math</span>.ceil():向上取整</span><br><span class="line">    <span class="built_in">Math</span>.floor():向下取整</span><br><span class="line">    <span class="built_in">Math</span>.round():四舍五入</span><br><span class="line"><span class="built_in">Math</span>.ceil/floor/round(<span class="built_in">Math</span>.random()*(较大的数 - 较小的数) + 较小的数)<span class="number">4</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.macloud.top/2020/01/15/Math%E5%AF%B9%E8%B1%A1/" data-id="ck5eyqi2v0003vow57qkjcvp3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
@@ -631,23 +611,23 @@ console.log(Array.isArray(arr));</code></pre><h3 id="数组去重"><a href="#数
       <ul>
         
           <li>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/">事件监听</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/BOM/">BOM</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/">事件流</a>
+          </li>
+        
+          <li>
             <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/">事件对象</a>
           </li>
         
           <li>
             <a href="/2020/01/19/%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/">键盘事件</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%B1%BB%E5%9E%8B/">事件类型</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/19/%E5%8D%95%E5%87%BB%E4%BA%8B%E4%BB%B6/">单击事件</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/">定时器</a>
           </li>
         
       </ul>

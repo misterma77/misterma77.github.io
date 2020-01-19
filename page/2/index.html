@@ -64,6 +64,161 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-数组" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/15/%E6%95%B0%E7%BB%84/" class="article-date">
+  <time datetime="2020-01-15T07:18:30.061Z" itemprop="datePublished">2020-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/15/%E6%95%B0%E7%BB%84/">数组</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="数组："><a href="#数组：" class="headerlink" title="数组："></a>数组：</h3><pre><code>数组是存储1个或多个数据的容器，是一组内存空间，
+通常用来批量处理数据
+这组内存空间的名字叫做数组名
+数组对自身储存的数组元素没有限制，不论数量类型
+通过数组下标（从0开始）来管理和操作数组
+数组名.length    表示数组的长度，也是储存元素的个数；因为下标从0开始，所以数组长度
+    减1表示最后一个元素下标</code></pre><p>创建数组：<br>    创建一个数组<br>        传统写法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">    <span class="keyword">var</span> str = <span class="keyword">new</span> <span class="built_in">String</span>();</span><br><span class="line"><span class="comment">//字面量(语法糖)</span></span><br><span class="line">    <span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="string">"haha"</span>];</span><br></pre></td></tr></table></figure>
+<h4 id="访问数组"><a href="#访问数组" class="headerlink" title="访问数组:"></a>访问数组:</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">访问单个元素</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(arr[<span class="number">0</span>]);</span><br><span class="line">访问全部元素</span><br><span class="line">    数组和循环的结合使用</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++)&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(arr[i]);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<h5 id="数组越界-访问了不属于该数组的内存空间"><a href="#数组越界-访问了不属于该数组的内存空间" class="headerlink" title="数组越界:  访问了不属于该数组的内存空间"></a>数组越界:  访问了不属于该数组的内存空间</h5><h3 id="数组方法："><a href="#数组方法：" class="headerlink" title="数组方法："></a>数组方法：</h3><pre><code>  1.push( )：将一个元素添加到数组的最后一位
+      数组名.push( 添加的元素 )
+  2.unshift( )：将一个元素添加到数组的第一位
+      数组名.unshift( 添加的元素 ）
+  3.pop( )：删除数组的最后一个元素
+      数组名.pop(  )
+  4.shift( )：删除数组的第一个元素
+      数组名.shift(  )
+  5.slice(开始,结束)：截取数组的指定范围，并返回
+      截取的是开始到结束的前一位（复制新内容）
+  6.splice(开始位置，修改长度）：修改原数据，不复制
+      删除：只规定开始位置与修改长度
+      替换：规定了开始位置，修改长度和新内容
+      插入：新内容的个数多于修改的长度
+  7.join( )：将数组中的元素转换为字符串，拼接并返回
+  8.sort( )：数组排序    从小到大
+  9.reverse( )：倒序排列
+10.cancat：将后者拼接到前者的后面，结合成新的数组
+11.instancdof：运算，判断它是不是一个数组，返回true/false
+     console.log(arr instanceof Array);
+书写方式2：
+Array.isArray(检测对象)
+console.log(Array.isArray(arr));</code></pre><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> s=i+<span class="number">1</span>;s &lt; arr.length<span class="number">-1</span>;s++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] == arr[s])&#123;</span><br><span class="line">        a.splice(s,<span class="number">1</span>);</span><br><span class="line">        --s;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr=[<span class="number">1</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">8</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">9</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">4</span>]</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> s=<span class="number">0</span>;s &lt;arr.length<span class="number">-1</span>;s++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] &lt; arr[s])&#123;</span><br><span class="line">            <span class="keyword">var</span> a=arr[i];</span><br><span class="line">            arr[i] = arr[s];</span><br><span class="line">            arr[s] = a;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/15/%E6%95%B0%E7%BB%84/" data-id="ck5ez4cze0005vow5epky8sc9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-随机色" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/" class="article-date">
+  <time datetime="2020-01-15T07:12:06.185Z" itemprop="datePublished">2020-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/">随机色</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="颜色的赋值"><a href="#颜色的赋值" class="headerlink" title="颜色的赋值:"></a>颜色的赋值:</h3><pre><code>1.通过英文名称
+2.通过rgb三原色调配比例，来赋值
+3.通过16进制位数，来匹配对应的颜色</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgb(140,230,120);</span><br></pre></td></tr></table></figure>
+<p>opacity 透明度<br>    取值范围  0~1<br>    1 为不透明，  0为完全透明<br>    background: red;<br>    opacity: 0.5;<br>    rgba():  4个参数   r g b a<br>    a  :  透明度<br>    必须要四个参数，一个都不能少</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">background-color: rgba(<span class="number">200</span>,<span class="number">100</span>,<span class="number">10</span>,<span class="number">0.6</span>);*<span class="regexp">/</span></span><br><span class="line"><span class="regexp">var box = document.getElementsByClassName("box")[0];</span></span><br><span class="line"><span class="regexp">function c()&#123;</span></span><br><span class="line"><span class="regexp">    return  Math.floor(Math.random()*255);</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/通过使用 rgb三原色 来完成随机颜色的赋值</span></span><br><span class="line"><span class="regexp">box.style.backgroundColor = 'rgb(' + c() + ',' + c() + ','+ c()+ ')';</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/15/%E9%9A%8F%E6%9C%BA%E8%89%B2/" data-id="ck5eyw4sc0004vow56lxu2an7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Math对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/01/15/Math%E5%AF%B9%E8%B1%A1/" class="article-date">
+  <time datetime="2020-01-15T07:07:43.480Z" itemprop="datePublished">2020-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/15/Math%E5%AF%B9%E8%B1%A1/">Math对象</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h3 id="Math对象：-是js提供给开发者的一款内置常见数学公式的对象"><a href="#Math对象：-是js提供给开发者的一款内置常见数学公式的对象" class="headerlink" title="Math对象： 是js提供给开发者的一款内置常见数学公式的对象"></a>Math对象： 是js提供给开发者的一款内置常见数学公式的对象</h3><h5 id="所有Math对象中的方法-都会有返回值。"><a href="#所有Math对象中的方法-都会有返回值。" class="headerlink" title="所有Math对象中的方法, 都会有返回值。"></a>所有Math对象中的方法, 都会有返回值。</h5><p>定义一个随机数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.random()*(较大的数 - 较小的数) + 较小的数</span><br></pre></td></tr></table></figure>
+<ol>
+<li>范围只确定终点 的随机数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> one = <span class="built_in">Math</span>.random()*<span class="number">10</span>;</span><br><span class="line"><span class="built_in">console</span>.log(one);</span><br></pre></td></tr></table></figure></li>
+<li>范围两端都确定的 随机数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> two = <span class="built_in">Math</span>.random()*(<span class="number">10</span><span class="number">-7</span>)+<span class="number">7</span>;</span><br><span class="line"><span class="built_in">console</span>.log(two);</span><br></pre></td></tr></table></figure></li>
+<li>去掉随机数中 的小数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="built_in">Math</span>.ceil():向上取整</span><br><span class="line">    <span class="built_in">Math</span>.floor():向下取整</span><br><span class="line">    <span class="built_in">Math</span>.round():四舍五入</span><br><span class="line"><span class="built_in">Math</span>.ceil/floor/round(<span class="built_in">Math</span>.random()*(较大的数 - 较小的数) + 较小的数)<span class="number">4</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.macloud.top/2020/01/15/Math%E5%AF%B9%E8%B1%A1/" data-id="ck5eyqi2v0003vow57qkjcvp3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-变量的作用域" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/15/%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F/" class="article-date">
@@ -410,23 +565,23 @@ prompt() 输入框，返回的数据，默认是字符串类型。即使不是�
       <ul>
         
           <li>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC/">事件监听</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/BOM/">BOM</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E6%B5%81/">事件流</a>
+          </li>
+        
+          <li>
             <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E5%AF%B9%E8%B1%A1/">事件对象</a>
           </li>
         
           <li>
             <a href="/2020/01/19/%E9%94%AE%E7%9B%98%E4%BA%8B%E4%BB%B6/">键盘事件</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/19/%E4%BA%8B%E4%BB%B6%E7%B1%BB%E5%9E%8B/">事件类型</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/19/%E5%8D%95%E5%87%BB%E4%BA%8B%E4%BB%B6/">单击事件</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/19/%E5%AE%9A%E6%97%B6%E5%99%A8/">定时器</a>
           </li>
         
       </ul>
